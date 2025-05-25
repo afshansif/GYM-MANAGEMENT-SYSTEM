@@ -1,40 +1,40 @@
-Gym Management System - PostgreSQL Database Project
-Project Overview
-A comprehensive database solution for fitness centers to manage:
+#  Gym Management System - PostgreSQL Database
 
-Member registrations and profiles
-Trainer schedules and specializations
-Subscription plans and payments
-Workout/diet plans
-Attendance tracking
-Automated notifications and reporting
- Key Features
-Feature	Description
-Member Management	Track member details, registration dates, and assigned trainers
-Subscription System	Handle recurring payments with expiration tracking
-Attendance Tracking	Log check-ins with timestamps and method (Mobile/RFID)
-Trainer Scheduling	Manage trainer availability and session bookings
-Reporting	Generate daily reports on revenue, attendance, and membership stats
-Tech Stack
-Database: PostgreSQL 15+
-Version Control: Git/GitHub
-Tools: pgAdmin, psql
-Quick Start
-Prerequisites
-PostgreSQL installed
-Git installed
-Installation
+![Database ER Diagram](/documentation/ERD.png)
+
+A complete database solution for fitness centers to automate member management, trainer scheduling, and financial reporting.
+
+##  Features
+
+| Module               | Key Capabilities                                                                 |
+|----------------------|---------------------------------------------------------------------------------|
+| **Member Portal**    | Registration, profile management, attendance tracking                          |
+| **Trainer System**   | Schedule management, specialization tracking, session booking                  |
+| **Subscription**     | Recurring payments, expiration alerts, membership tiers                        |
+| **Operations**       | Daily reporting (revenue/attendance), workout/diet plan management             |
+
+##  Tech Stack
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-blue)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![pgAdmin](https://img.shields.io/badge/pgAdmin-4.30-red)
+
+##  Getting Started
+
+### Prerequisites
+- PostgreSQL 15+
+- Git
+- Basic SQL knowledge
+
+### Installation
+
+```bash
 # Clone repository
 git clone https://github.com/afshansif/GYM-MANAGEMENT-SYSTEM.git
 cd GYM-MANAGEMENT-SYSTEM
 
-# Create database
+# Setup database
 createdb gym_management
-
-# Initialize schema
 psql gym_management < database_scripts/schema.sql
 psql gym_management < database_scripts/views.sql
 psql gym_management < database_scripts/stored_procedures.sql
-
-# Load sample data (optional)
-psql gym_management < database_scripts/sample_data.sql
